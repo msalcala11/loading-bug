@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Bug View</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="presentLoading()">Click to show loader</button>
+  <p *ngIf="loaderShown">
+    Loader is now showing, it's just hiding behind this view. Don't believe me? Hit the back button on the navbar ;)
+  </p>
+</ion-content>
